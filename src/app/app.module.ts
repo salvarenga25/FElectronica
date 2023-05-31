@@ -4,14 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ListaClientesComponent } from './components/lista-clientes/lista-clientes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule} from '@angular/material/form-field'
-import { RouterModule } from '@angular/router';
+import { MatInputModule } from '@angular/material/input';
+//import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { RouterModule } from '@angular/router';
     BrowserAnimationsModule,
     HttpClientModule,
     MatFormFieldModule,
-    RouterModule
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
