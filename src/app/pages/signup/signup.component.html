@@ -3,46 +3,47 @@
         <div class = "row" style ="margin-top: 20px;">
             <div class = "col-md-6 offset-md-3">
                 <div class ="container text-center">
-                    <img src="" alt="">
+                    <img src="../../../assets/signup.png" href="https://www.flaticon.com/free-icons/add-user" width="100" height="100" alt="guy drawing">
                 </div>
 
-                    <h1 class="text-center">REGISTRATE AQUI </h1>
+                    <h1 class="text-center">REGISTRATE AQUI</h1>
 
-                    <form action="">
+                    <form (ngSubmit)="formSubmit()">
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Usuario:</mat-label>
-                            <input (ngModel)="user.usuario" matInput placeholder="Ingrese el Usuario">
+                            <input required [(ngModel)]="user.usuario" name="usuario" matInput placeholder="Ingrese el Usuario">
+                            <mat-hint>El nombre de Usuario debe ser unico</mat-hint>
                         </mat-form-field>
 
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Contraseña:</mat-label>
-                            <input  (ngModel)="user.contras" type="password" matInput placeholder="Ingrese su Contraseña">
+                            <input required [(ngModel)]="user.contras" name="contras" type="password" matInput placeholder="Ingrese su Contraseña">
                         </mat-form-field>
 
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Nombres:</mat-label>
-                            <input  (ngModel)="user.nombre" matInput placeholder="Ingrese su nombre del Usuario">
+                            <input required [(ngModel)]="user.nombre" name="nombre" matInput placeholder="Ingrese su nombre del Usuario">
                         </mat-form-field>
 
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Apellidos:</mat-label>
-                            <input  (ngModel)="user.apellido" matInput placeholder="Ingrese sus Apellidos">
+                            <input required [(ngModel)]="user.apellido" name="apellido" matInput placeholder="Ingrese sus Apellidos">
                         </mat-form-field>
 
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Correo:</mat-label>
-                            <input  (ngModel)="user.email" type="email" matInput placeholder="Ingrese su correo de Usuario">
+                            <input required [(ngModel)]="user.email" name="email" type="email" matInput placeholder="Ingrese su correo de Usuario">
                         </mat-form-field>
 
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Telefono:</mat-label>
-                            <input  (ngModel)="user.celular" matInput placeholder="Ingrese el Telefono del Usuario">
+                            <input required [(ngModel)]="user.celular" name="celular" matInput placeholder="Ingrese el Telefono del Usuario">
                         </mat-form-field>
                     
                         <div class="container text-center">
-                            <button  mat-raised-button (click)="formSubmit" color="primary">Registrar</button>
-                            <button style = "margin-left: 20px" mat-raised-button color="accent">Limpiar</button>
-                            
+                            <button  mat-raised-button  color="primary">Registrar</button>
+                            <button type="reset" style = "margin-left: 20px" mat-raised-button color="accent">Limpiar</button>
+
                         </div>
                     
                     </form>
