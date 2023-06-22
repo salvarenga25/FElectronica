@@ -1,6 +1,10 @@
 <mat-toolbar color="primary">
-    <a [routerLink]="'/'"
-        mat-icon class = "example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>Menu_Clientes</mat-icon>
+    <a [routerLink]="'/'" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>home</mat-icon>
     </a>
-</mat-toolbar>
+    <span>SISTEMA DE FACTURACIÓN ELECTRONICA</span>
+    <span class="example-spacer"></span>
+    <a [routerLink]="'/login'" color="pimary" class="example-spacer2 font-18" mat-flat-button  aria-label="Example icon-button with heart icon">Iniciar Sesión</a>
+    
+    <a [routerLink]="'/signup'" color="primary" mat-flat-button class="example-spacer2 font-18" aria-label="Example icon-button with heart icon">Registrate</a>
+    </mat-toolbar>

@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MatButtonModule } from '@angular/material/button';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -17,7 +18,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HomeComponent } from './pages/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon'; 
+import { MatIconModule } from '@angular/material/icon';
+import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+import { ProfileComponent } from './pages/profile/profile.component'; 
 //import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { MatIconModule } from '@angular/material/icon';
     SignupComponent,
     LoginComponent,
     ListaClientesComponent,
-    HomeComponent
+    HomeComponent,
+    UserDashboardComponent,
+    ProfileComponent,
+    
   ],
   imports: [
     BrowserModule,
